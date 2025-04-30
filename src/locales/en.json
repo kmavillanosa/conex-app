@@ -15,5 +15,9 @@
     "organizerLabel": "Organizer:",
     "seriesLabel": "Series:",
     "websiteLabel": "Visit Official Website"
+  },
+  "sort": {
+    "date": "date",
+    "location": "location"
   }
 }

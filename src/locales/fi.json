@@ -1,5 +1,5 @@
 {
-  "appName": "Konferenssien Tutkijasovellus",
+  "appName": "Konferenssien Tutkimussovellus",
   "common": {
     "isLoading": "Odota hetki",
     "back": "← Takaisin"
@@ -10,10 +10,14 @@
   },
   "details": {
     "headline": "Konferenssin tiedot",
-    "datesLabel": "Päivät:",
+    "datesLabel": "Päivämäärät:",
     "locationLabel": "Sijainti:",
     "organizerLabel": "Järjestäjä:",
     "seriesLabel": "Sarja:",
     "websiteLabel": "Vieraile virallisella sivustolla"
+  },
+  "sort": {
+    "date": "päivämäärä",
+    "location": "sijainti"
   }
 }

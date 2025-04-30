@@ -15,5 +15,9 @@
     "organizerLabel": "Arrangør:",
     "seriesLabel": "Serie:",
     "websiteLabel": "Besøg Officiel Hjemmeside"
+  },
+  "sort": {
+    "date": "dato",
+    "location": "placering"
   }
 }
