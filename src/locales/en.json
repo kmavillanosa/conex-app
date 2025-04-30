@@ -1,0 +1,19 @@
+{
+  "appName": "Conference Explorer Application",
+  "common": {
+    "isLoading": "Please wait",
+    "back": "← Back"
+  },
+  "index": {
+    "meta_title": "Conference explorer",
+    "meta_description": "Explores conference in finland"
+  },
+  "details": {
+    "headline": "Conference details",
+    "datesLabel": "Dates:",
+    "locationLabel": "Location:",
+    "organizerLabel": "Organizer:",
+    "seriesLabel": "Series:",
+    "websiteLabel": "Visit Official Website"
+  }
+}

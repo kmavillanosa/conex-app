@@ -1,0 +1,77 @@
+.conference-card {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allow the card to take up available space */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  &__image-wrapper {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  &__image {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  &__content {
+    padding: 16px;
+
+    & > * {
+      margin: 4px 0;
+    }
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  &__dates,
+  &__location {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  &__slogan {
+    font-style: italic;
+    color: #333;
+    margin-top: 8px;
+  }
+}
+
+.conference-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  padding: 16px;
+
+  align-content: center;
+
+  &__item {
+    grid-column: span 4;
+
+    @media (max-width: 1024px) {
+      grid-column: span 6; /* 2 cards per row on tablets */
+    }
+
+    @media (max-width: 600px) {
+      grid-column: span 12; /* 1 card per row on mobile */
+    }
+  }
+}

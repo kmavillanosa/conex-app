@@ -1,0 +1,19 @@
+{
+  "appName": "Konferenceudforsker Applikation",
+  "common": {
+    "isLoading": "Vent venligst",
+    "back": "← Tilbage"
+  },
+  "index": {
+    "meta_title": "Konferenceudforsker",
+    "meta_description": "Udforsker konferencer i Finland"
+  },
+  "details": {
+    "headline": "Konferencedetaljer",
+    "datesLabel": "Datoer:",
+    "locationLabel": "Placering:",
+    "organizerLabel": "Arrangør:",
+    "seriesLabel": "Serie:",
+    "websiteLabel": "Besøg Officiel Hjemmeside"
+  }
+}

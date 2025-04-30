@@ -1,0 +1,19 @@
+{
+  "appName": "Konferenssien Tutkijasovellus",
+  "common": {
+    "isLoading": "Odota hetki",
+    "back": "← Takaisin"
+  },
+  "index": {
+    "meta_title": "Konferenssien tutkija",
+    "meta_description": "Tutkii konferensseja Suomessa"
+  },
+  "details": {
+    "headline": "Konferenssin tiedot",
+    "datesLabel": "Päivät:",
+    "locationLabel": "Sijainti:",
+    "organizerLabel": "Järjestäjä:",
+    "seriesLabel": "Sarja:",
+    "websiteLabel": "Vieraile virallisella sivustolla"
+  }
+}
