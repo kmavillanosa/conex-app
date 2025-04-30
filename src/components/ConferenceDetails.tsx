@@ -1,11 +1,10 @@
 "use client";
 
-import React, { useMemo } from "react";
+import React from "react";
 import { useQuery } from "@apollo/client";
 import Loading from "./Loading";
 import {
-  GetConferenceDocument,
-  GetConferenceQuery,
+  GetConferenceDocument
 } from "@/graphql/generated/graphql";
 import Link from "next/link";
 
@@ -77,12 +76,10 @@ const ConferenceDetails: React.FC<ConferenceDetailsProps> = ({
           <table>
             <tbody>
               <tr>
-                <td><strong>Name:</strong></td>
                 <td>{item?.organizer.name}</td>
               </tr>
               {item?.organizer.social.homepage && (
                 <tr>
-                  <td>Homepage:</td>
                   <td>
                     <a
                       href={item.organizer.social.homepage}

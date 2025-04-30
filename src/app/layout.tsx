@@ -43,7 +43,7 @@ export default async function Index(props: {
   const { locale } = await props.params;
 
   if (!routing.locales.includes(locale)) {
-    notFound();
+    // notFound();
   }
 
   setRequestLocale(locale);

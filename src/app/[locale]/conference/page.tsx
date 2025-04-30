@@ -1,6 +1,5 @@
 import ConferenceList from "@/components/ConferenceList";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { useSearchParams } from 'next/navigation'
 type IIndexProps = {
   params: Promise<{ locale: string }>;
 };

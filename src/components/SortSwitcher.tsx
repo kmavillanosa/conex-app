@@ -2,7 +2,6 @@
 
 import type { ChangeEventHandler } from "react";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
-import { getTranslations, setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 
 export const SortSwitcher = () => {

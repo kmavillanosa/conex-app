@@ -1,0 +1,23 @@
+{
+  "appName": "カンファレンス探索アプリケーション",
+  "common": {
+    "isLoading": "お待ちください",
+    "back": "← 戻る"
+  },
+  "index": {
+    "meta_title": "カンファレンス探索",
+    "meta_description": "フィンランドのカンファレンスを探索する"
+  },
+  "details": {
+    "headline": "カンファレンスの詳細",
+    "datesLabel": "日程：",
+    "locationLabel": "場所：",
+    "organizerLabel": "主催者：",
+    "seriesLabel": "シリーズ：",
+    "websiteLabel": "公式ウェブサイトを見る"
+  },
+  "sort": {
+    "date": "日付",
+    "location": "場所"
+  }
+}
