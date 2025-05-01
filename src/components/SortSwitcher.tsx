@@ -4,7 +4,7 @@ import type { ChangeEventHandler } from "react";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-export const SortSwitcher = () => {
+const SortSwitcher = () => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -53,3 +53,5 @@ export const SortSwitcher = () => {
     </select>
   );
 };
+
+export default SortSwitcher;

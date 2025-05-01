@@ -5,7 +5,7 @@ import { routing, usePathname } from "@/libs/i18nNavigation";
 import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 
-export const LocaleSwitcher = () => {
+const LocaleSwitcher = () => {
   const router = useRouter();
   const pathname = usePathname();
   const locale = useLocale();
@@ -21,8 +21,8 @@ export const LocaleSwitcher = () => {
       onChange={handleChange}
       aria-label="lang-switcher"
       style={{
-        fontSize: "18px", 
-        padding: "10px",  
+        fontSize: "18px",
+        padding: "10px",
         borderRadius: "5px",
       }}
     >
@@ -34,3 +34,5 @@ export const LocaleSwitcher = () => {
     </select>
   );
 };
+
+export default LocaleSwitcher;

@@ -5,16 +5,6 @@ type IIndexProps = {
   params: Promise<{ locale: string; id: string }>;
 };
 
-type Labels = {
-  back: string;
-  loading: string;
-  headline: string;
-  datesLabel: string;
-  locationLabel: string;
-  organizerLabel: string;
-  seriesLabel: string;
-  visitWebsiteLabel: string;
-};
 
 export default async function ConferenceDetailsPage(props: IIndexProps) {
   const { locale, id } = await props.params;

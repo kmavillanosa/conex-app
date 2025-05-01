@@ -1,4 +1,4 @@
-import { LocaleSwitcher } from "@/components/LocalSwitcher";
+import LocaleSwitcher from "@/components/LocaleSwitcher";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 export default async function Layout(props: {

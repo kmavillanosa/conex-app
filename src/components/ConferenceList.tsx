@@ -5,7 +5,7 @@ import { GetConferencesDocument } from "@/graphql/generated/graphql";
 import ConferenceCard from "@/components/ConferenceCard";
 import { useMemo } from "react";
 import Loading from "./Loading";
-import { SortSwitcher } from "./SortSwitcher";
+import SortSwitcher from "./SortSwitcher";
 import { useSearchParams } from "next/navigation";
 import _ from "lodash";
 
