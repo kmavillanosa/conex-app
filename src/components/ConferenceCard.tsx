@@ -32,7 +32,12 @@ const ConferenceCard: React.FC<ConferenceCardProps> = ({
             {startDate} - {endDate}
           </p>
           <p className="conference-card__location">
-            {locations?.map((item) => item.name).join(", ")}
+            {locations
+              ?.map(
+                (location) =>
+                  `${location.name}, ${location.address}, ${location.city}, ${location.country?.name}`
+              )
+              .join(", ")}
           </p>
           {slogan && <p className="conference-card__slogan">"{slogan}"</p>}
         </div>
