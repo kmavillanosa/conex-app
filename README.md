@@ -2,7 +2,7 @@
 
 ## Live
 
-https://conex-app-five.vercel.app/dk/conference
+https://conex-app-five.vercel.app/en/conference
 
 ## Preview
 
