@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Conference Explorer
 
-First, run the development server:
+## Preview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![List of conferences](https://awesomescreenshot.s3.amazonaws.com/image/4784631/54220973-11ca9de775a120629e2a4a3f9accf745.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20250501%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250501T025406Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=13ee9a5d54aa0939873c9d80753487157beed9fc79b74dd51b74abe50d8972a0)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Details: 
+![enter image description here](https://awesomescreenshot.s3.amazonaws.com/image/4784631/54220971-cce9d037f6317796414936efbc29fa56.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA/20250501/us-east-1/s3/aws4_request&X-Amz-Date=20250501T025604Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=3dd640dc6432ae6e912dce409301f02981e83408c5b07756fe6d85fc1d00333a)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Language Selection
+Users can switch the interface language using a language selector. The available options include:
 
-To learn more about Next.js, take a look at the following resources:
+- **EN** – English  
+- **FI** – Finnish  
+- **DK** – Danish  
+- **JP** – Japanese
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The application updates UI text accordingly when a different language is selected.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Sorting Options
+Users can organize the list of conferences using a sorting control. The available sort modes are:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **By Location (A–Z)** – Sorts conferences alphabetically by their location name.
+- **By Date (Newest First)** – Sorts conferences in descending order based on their start date.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Switching between these modes dynamically updates the grid to reflect the selected sorting preference.
+
+---
+
+## 1. Display List of Conferences
+When the user lands on the index page, the application fetches data from a GraphQL API and displays the conferences in a multi-column responsive grid (on desktop devices). Each conference card includes the title, image, event dates, location, and an optional slogan. The list is ordered with the most recently added conferences appearing first.
+
+---
+
+## 2. Navigate to Conference Details
+Once the index page is loaded, clicking on any conference card takes the user to that conference's dedicated details page. This enables users to explore more comprehensive information about the selected event.
+
+---
+
+## 3. Switch Between Sorting Options
+While viewing the index page, users can select different sorting options. The conferences are re-ordered based on the chosen criteria, allowing users to switch between sorting by event date and sorting alphabetically by location.

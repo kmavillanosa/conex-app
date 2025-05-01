@@ -22,16 +22,19 @@ export default async function ConferenceDetailsPage(props: IIndexProps) {
 
   const t = await getTranslations({ locale: locale });
 
-  const labels: Labels = {
-    back: t("common.back"),
-    loading: t("common.isLoading"),
-    headline: t("details.headline"),
-    datesLabel: t("details.datesLabel"),
-    locationLabel: t("details.locationLabel"),
-    organizerLabel: t("details.organizerLabel"),
-    seriesLabel: t("details.seriesLabel"),
-    visitWebsiteLabel: t("details.websiteLabel"),
-  };
-
-  return <ConferenceDetails id={id} labels={labels} />;
+  return (
+    <ConferenceDetails
+      id={id}
+      labels={{
+        back: t("common.back"),
+        loading: t("common.isLoading"),
+        headline: t("details.headline"),
+        datesLabel: t("details.datesLabel"),
+        locationLabel: t("details.locationLabel"),
+        organizerLabel: t("details.organizerLabel"),
+        seriesLabel: t("details.seriesLabel"),
+        visitWebsiteLabel: t("details.websiteLabel"),
+      }}
+    />
+  );
 }
