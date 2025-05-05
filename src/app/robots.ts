@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { getBaseUrl } from '@/utils/Helpers';
 
+// search engine permissions
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {

@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { routing } from "@/libs/i18nNavigation";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
-import { notFound } from "next/navigation";
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import "@/styles/globals.css";
 import "@/styles/styles.scss";
 import { ApolloProvider } from "@/graphql/graphQLClient";
@@ -41,6 +44,7 @@ export default async function Index(props: {
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await props.params;
+  const t = await getTranslations({ locale: locale });
 
   if (!routing.locales.includes(locale)) {
     // notFound();
@@ -51,7 +55,7 @@ export default async function Index(props: {
 
   return (
     <html lang={locale}>
-      <title>{"Conferrence explorer"}</title>
+      <title>{t("appName")}</title>
       <body suppressHydrationWarning>
         <ApolloProvider>
           <NextIntlClientProvider locale={locale} messages={messages}>
